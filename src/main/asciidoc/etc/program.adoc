@@ -1,0 +1,21 @@
+== `Endpoint Program`
+
+=== Get programs
+
+operation::program-controller-test/get-programs[]
+
+=== Get program
+
+operation::program-controller-test/get-program/1[]
+
+=== Create program
+
+operation::program-controller-test/create/1[]
+
+=== Update program
+
+operation::program-controller-test/update/1[]
+
+=== Delete program
+
+operation::program-controller-test/_delete/1[]

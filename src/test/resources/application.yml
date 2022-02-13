@@ -1,0 +1,19 @@
+server :
+    port : 0
+spring :
+    application :
+        name : washing-service
+    datasource :
+        driver-class-name : org.postgresql.Driver
+        type : com.zaxxer.hikari.HikariDataSource
+        url : ${DB_URL}
+        username : ${DB_USERNAME}
+        password : ${DB_PASSWORD}
+        hikari :
+            schema : public
+    liquibase :
+        change-log : classpath:db/changelog-master.yaml
+        url : ${spring.datasource.url}
+        user : ${spring.datasource.username}
+        password : ${spring.datasource.password}
+    main.lazy-initialization : true

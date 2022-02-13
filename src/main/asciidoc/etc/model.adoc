@@ -1,0 +1,23 @@
+== `Endpoint Model`
+
+=== Get models
+
+operation::model-controller-test/get-models[]
+
+=== Get model
+
+operation::model-controller-test/get-model/1[]
+
+=== Create model
+
+operation::model-controller-test/create/1[]
+
+=== Update model
+
+operation::model-controller-test/update/1[]
+
+=== Delete model
+
+operation::model-controller-test/_delete/1[]
+
+

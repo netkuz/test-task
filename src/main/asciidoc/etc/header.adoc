@@ -1,0 +1,11 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:sectanchors:
+
+= Description REST API Washing machine service
+
+IMPORTANT: In development...

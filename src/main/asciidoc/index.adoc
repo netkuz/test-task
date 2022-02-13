@@ -1,0 +1,10 @@
+include::etc/header.adoc[]
+
+'''
+include::etc/model.adoc[]
+
+'''
+include::etc/program.adoc[]
+
+'''
+include::etc/machine.adoc[]
