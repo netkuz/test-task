@@ -1,10 +1,6 @@
 spring :
   application :
     name : washing-service
-    version: @project.version@
-    build: @timestamp@
-    user: @user.name@
-    tag: @docker.tag@
   datasource :
     url : jdbc:postgresql://localhost:5432/changeIt
     username : changeIt

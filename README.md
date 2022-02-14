@@ -7,5 +7,13 @@ Implemented with their helps a simple logic for persisted a washing machine stat
 
 ### REST API Documentation
 Documentation was generated with spring rest docs. You can check out the link
-[here](./docs/index.html)
+[here](./docs/index.html). 
+
+### Building & deployment
+* `mvn clean install`
+* `mvn jib:build`
+* `docker-compose up -d`
+
+If everything's ok you should see the documentation reference in your browser http://localhost:8080/docs/index.html
+
 

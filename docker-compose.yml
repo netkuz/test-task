@@ -1,0 +1,38 @@
+version: '3.9'
+
+services:
+  washing-service:
+    image: netkuz/washing:latest
+    hostname: washing-service
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/postgres
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 12345
+    ports:
+      - "8080:8080"
+    networks:
+      - network-dev
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 2G
+        reservations:
+          memory: 500M
+    restart: unless-stopped
+
+  postgres:
+    image: postgres
+    hostname: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345
+    ports:
+      - "5432:5432"
+    networks:
+      - network-dev
+    restart: unless-stopped
+
+networks :
+  network-dev :
+    driver : bridge
